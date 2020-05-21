@@ -1,0 +1,27 @@
+{
+  "name": "unit-price-calculator",
+  "version": "0.0.0",
+  "description": "A unit price calculator app using Node.js and Express 4",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thawkin3/unit-price-calculator.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "calculator"
+  ],
+  "license": "MIT"
+}

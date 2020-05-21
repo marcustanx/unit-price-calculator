@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Unit Price Calculator</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <img src="/lang-logo.png">
+        <h1>Unit Price Calculator</h1>
+        <p>This is a sample Node application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
+        <a class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-nodejs"><span class="glyphicon glyphicon-flash"></span> Getting Started on Heroku with Node.js</a>
+        <a class="btn btn-lg btn-primary" href="https://github.com/thawkin3/unit-price-calculator"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <form id="unit-price-calculator-form">
+            <div class="form-group">
+              <label for="product">Product</label>
+              <select class="form-control" id="product">
+                <option disabled selected value="">Please select</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="unit">Unit of Measurement</label>
+              <select class="form-control" id="unit">
+                <option value="kg" id="kg">kilograms (kg)</option>
+                <option value="lbs" id="lbs">pounds (lbs)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="weight-and-price">Weight and Price Options</label>
+              <select class="form-control" id="weight-and-price">
+                <option disabled selected value="">Please select after choosing a product and unit of measurement</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate Unit Price</button>
+          </form>
+        </div>
+        <div class="row">
+          <div id="results-container"></div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+  </body>
+</html>
